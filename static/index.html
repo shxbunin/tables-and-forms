@@ -10,6 +10,67 @@
     <h1>Найди себе друга!</h1>
 
     <form action="/pets/orders" method="post">
+        <label>
+            petType
+            <select name="petType">
+                <option value="Крокодило-Бомбардило" selected>Крокодило-Бомбардило</option>
+                <option value="cat">cat</option>
+                <option value="dog">dog</option>
+                <option value="tiger">tiger</option>
+
+            </select>
+        </label>
+        <br><br>
+        <label>
+            gender
+            <select name="gender">
+                <option value="boy">Male</option>
+                <option value="girl">Female</option>
+                <option value="none" selected>Email</option>
+            </select>
+        </label>
+        <br><br>
+        <label>
+            eyeColor
+            <select name="eyeColor">
+                <option value="#8B4513">Карие</option>
+                <option value="#87CEEB">Голубые</option>
+                <option value="#32CD32">Зеленые</option>
+                <option value="#808080">Серые</option>
+                <option value="#FF4500" selected>Цвета свежей моркови</option>
+            </select>
+        </label>
+        <br><br>
+        <label>
+            tailLength
+            <input type="number" name="tailLength" placeholder=0 min=7 max=120>
+        </label>
+        <br><br>
+        <label>
+            name
+            <input type="text" name="name" placeholder="nameUser" minlength=3 maxlength=50 required>
+        </label>
+        <br><br>
+        <label>
+            dateOfBirth
+            <input type="date" name="dateOfBirth">
+        </label>
+        <br><br>
+        <label>
+            email
+            <input type="email" name="email" placeholder="name@example.com">
+        </label>
+        <br><br>
+        <label>
+            phone
+            <input type="tel" name="phone" placeholder="(000) 000-0000">
+        </label>
+        <br><br>
+        <label>
+            rules
+            <input type="checkbox" name="rules" value="true" checked required>Согласен
+        </label>
+        <br><br>
         <input type="submit"></input>
     </form>
 
